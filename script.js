@@ -7,7 +7,7 @@ let mainTimer = document.querySelector("#timer");
 let reset = document.getElementById("reset-Btn");
 let congratulations = document.querySelector(".congratulations");
 let restCountdown = document.querySelector(".getReady")
-let workoutTime = 3;
+let workoutTime = 30;
 let currentVideoIndex = 0;
 let lastMin, lastSec;
 let timerInterval;
