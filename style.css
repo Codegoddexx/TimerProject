@@ -18,6 +18,19 @@ body {
             inset: 0;
 }
 
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-family: 'Courier New', Courier, monospaces;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+}
+
+
 .container {
   text-align: center;
   margin-top: 10rem;
@@ -102,10 +115,23 @@ letter-spacing: 0.5rem;
 }
 
 
-.congratulations h2 {
+.congratulations a {
+  font-family: fantasy;
+  color: rgb(242, 16, 16);
   display: flex;
+  margin-top: 7rem;
   justify-content: end;
+  letter-spacing: 0.3rem;
 }
+
+
+a:hover {
+  font-weight: 900;
+  font-size: 1.8rem;
+  z-index: 2;
+  text-decoration: none;
+}
+
 
 /* inspired form gumroad website */
 button {
