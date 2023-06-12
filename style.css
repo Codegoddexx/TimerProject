@@ -1,0 +1,136 @@
+*{
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: digital-7;
+  src: url("./digital-7.ttf");
+}
+
+body {
+  position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            background-color: rgb(182, 164, 126);
+            background-image: linear-gradient(90deg, rgba(182, 164, 126, 1) 74%, rgba(182, 164, 126, 0.4766281512605042) 100%);
+            inset: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#video-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 50%;
+  max-height: 50rem;
+  padding: 0%;
+}
+
+.getReady {
+position: absolute;
+inset: 0;
+width: 100%;
+max-height: 50em;
+font-family: fantasy;
+font-weight: 900;
+background-color: #bdbdbd;
+display: none;
+}
+
+.control {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 50%;
+}
+
+#timer {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1.3rem;
+  font-family: digital-7;
+}
+
+button {
+  margin: 5px;
+}
+
+video {
+  /* width: 40em;
+  height: 30em; */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.congratulations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 0 2000px  rgb(182, 164, 126);;
+  background: rgb(255, 254, 201); 
+  padding: 15em;
+}
+
+
+.congratulations h1 {
+font-style:italic ;
+font-family: fantasy;
+font-weight: 900;
+letter-spacing: 0.5rem;
+}
+
+
+.congratulations p {
+  margin-top: 3rem;
+  font-family: cursive;
+  line-height: 1.5rem;
+}
+
+
+.congratulations h2 {
+  display: flex;
+  justify-content: end;
+}
+
+/* inspired form gumroad website */
+button {
+  --bg: #000;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+border:5px dotted var(--hover-bg) ;
+}
+
+button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+border:5px dotted rgba(31, 233, 9, 0.416) ;
+font-weight: 500s;
+}
+
+button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
