@@ -1,5 +1,4 @@
-*{
-  /* overflow: hidden; */
+* {
   margin: 0;
   padding: 0;
 }
@@ -11,33 +10,37 @@
 
 body {
   position: fixed;
-            min-width: 100%;
-            min-height: 100%;
-            background-color: rgb(182, 164, 126);
-            background-image: linear-gradient(90deg, rgba(182, 164, 126, 1) 74%, rgba(182, 164, 126, 0.4766281512605042) 100%);
-            inset: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgb(182, 164, 126);
+  background-image: linear-gradient(
+    90deg,
+    rgba(182, 164, 126, 1) 74%,
+    rgba(182, 164, 126, 0.4766281512605042) 100%
+  );
+  inset: 0;
 }
-
 
 header {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  font-family: 'Courier New', Courier, monospaces;
+  font-family: "Courier New", Courier, monospaces;
   font-style: italic;
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 0.4rem;
 }
 
-
 .container {
   text-align: center;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 25rem;
+  border: 1px solid red;
 }
 
 #video-container {
@@ -49,14 +52,14 @@ header {
 }
 
 .getReady {
-position: absolute;
-inset: 0;
-width: 100%;
-max-height: 50em;
-font-family: fantasy;
-font-weight: 900;
-background-color: #bdbdbd;
-display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-height: 50em;
+  font-family: fantasy;
+  font-weight: 900;
+  background-color: #bdbdbd;
+  display: none;
 }
 
 .control {
@@ -94,44 +97,47 @@ video {
   left: 50%;
   display: none;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 0 2000px  rgb(182, 164, 126);;
-  background: rgb(255, 254, 201); 
+  box-shadow: 0px 0px 0 2000px rgb(182, 164, 126);
+  background: rgb(255, 254, 201);
   padding: 15em;
 }
 
-
-.congratulations h1 {
-font-style:italic ;
-font-family: fantasy;
-font-weight: 900;
-letter-spacing: 0.5rem;
+.congratulations__img,
+img {
+  width: 100%;
 }
 
+.congratulations h1 {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-style: italic;
+  font-family: fantasy;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
+}
 
 .congratulations p {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-family: cursive;
   line-height: 1.5rem;
 }
-
 
 .congratulations a {
   font-family: fantasy;
   color: rgb(242, 16, 16);
   display: flex;
-  margin-top: 7rem;
+  margin-top: 1rem;
   justify-content: end;
   letter-spacing: 0.3rem;
 }
-
 
 a:hover {
   font-weight: 900;
   font-size: 1.8rem;
   z-index: 2;
   text-decoration: none;
+  transition: 0.5s;
 }
-
 
 /* inspired form gumroad website */
 button {
@@ -144,19 +150,28 @@ button {
   padding: 0.8em 2em;
   background: var(--bg);
   transition: 0.2s;
-border:5px dotted var(--hover-bg) ;
+  border: 5px dotted var(--hover-bg);
 }
 
 button:hover {
   color: var(--hover-text);
-  transform: translate(-0.25rem,-0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
   background: var(--hover-bg);
   box-shadow: 0.25rem 0.25rem var(--bg);
-border:5px dotted rgba(31, 233, 9, 0.416) ;
-font-weight: 500s;
+  border: 5px dotted rgba(31, 233, 9, 0.416);
+  font-weight: 500s;
 }
 
 button:active {
   transform: translate(0);
   box-shadow: none;
+}
+
+#advice {
+  border: 1px solid green;
+  width: 36rem;
+  margin: auto;
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
