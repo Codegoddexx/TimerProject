@@ -34,13 +34,11 @@ header {
 
 .container {
   text-align: center;
-  /* margin-top: 10rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 25rem;
-  border: 1px solid red;
 }
 
 #video-container {
@@ -57,9 +55,20 @@ header {
   width: 100%;
   max-height: 50em;
   font-family: fantasy;
+  font-size: 8rem;
   font-weight: 900;
-  background-color: #bdbdbd;
+
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
   display: none;
+  padding-top: 15%;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+
 }
 
 .control {
@@ -85,26 +94,25 @@ button {
 }
 
 video {
-  /* width: 40em;
-  height: 30em; */
   max-width: 100%;
   max-height: 100%;
 }
 
 .congratulations {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  left: -50%;
   display: none;
-  transform: translate(-50%, -50%);
+  margin-left: 0;
   box-shadow: 0px 0px 0 2000px rgb(182, 164, 126);
   background: rgb(255, 254, 201);
   padding: 15em;
+  padding-top: 10px;
 }
 
 .congratulations__img,
 img {
   width: 100%;
+
 }
 
 .congratulations h1 {
@@ -113,7 +121,6 @@ img {
   font-family: fantasy;
   font-weight: 900;
   letter-spacing: 0.5rem;
-  margin-top: 1rem;
 }
 
 .congratulations p {
@@ -139,7 +146,7 @@ a:hover {
   transition: 0.5s;
 }
 
-/* inspired form gumroad website */
+
 button {
   --bg: #000;
   --hover-bg: #ff90e8;
@@ -168,10 +175,10 @@ button:active {
 }
 
 #advice {
-  border: 1px solid green;
   width: 36rem;
   margin: auto;
   font-family: monospace;
   font-size: 1.5rem;
   font-weight: 900;
+  font-style: italic;
 }
