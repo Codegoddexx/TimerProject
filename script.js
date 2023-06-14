@@ -103,20 +103,9 @@ function restFn() {
   console.log("working");
 }
 
-// startBtn.addEventListener("click", () => {
-//   restFn();
-//   setInterval(() => {
-//     restFn();
-//   }, (workoutTime + 1) * 1000)
-// });
-
 startBtn.addEventListener("click",()=>{
-  // restFn()
   nextVideo();
   startTimer(workoutTime, mainTimer)
-
-  
-  
 })
 
 function newRestFn(){
@@ -124,6 +113,7 @@ function newRestFn(){
   restCountdown.style.display = "block";
   restCountdown.innerText = "Take a rest!";
 }
+
 
 function resetFn(timer) {
   clearInterval(resFnInterval);
@@ -139,19 +129,15 @@ reset.addEventListener('click', () => {
 
 
 function pausefn() {
-  // clearInterval(timerInterval);
   if (timerOn) {
     timerOn = false;
     clearTimeout(timerStopper)
-    // restCountdown.pause();
     clearInterval(restInterval);
     video.pause();
     playPause.innerText = "PLAY";
   } else {
     timerOn = true;
     video.play();
-    // restCountdown.play();
-    // restInterval;
     playPause.innerText = "PAUSE";
     timerStopper =setTimeout(()=>{
       restFn()
